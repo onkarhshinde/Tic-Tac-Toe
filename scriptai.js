@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
     const handleHomeRedirect = () => {
-        window.location.href = 'home.html'; // Change this to your home page URL
+        window.location.href = 'home.html'; 
     };
 
 
