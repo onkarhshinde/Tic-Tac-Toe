@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="stylesfriends.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic Tac Toe Game</h1>
+        <div class="input-section">
+            <p class="text-with-background" >Enter names of players:</p>
+            <div class="player-inputs">
+                <label class="text-with-background" for="player1">Player 1 (O): </label>
+                <input type="text" id="player1" required>
+                <label class="text-with-background" for="player2">Player 2 (X): </label>
+                <input type="text" id="player2" required>
+            </div>
+            <button id="startBtn">Start Game</button>
+        </div>
+        
+        <!-- Game elements initially hidden -->
+        <div id="gameElements" style="display: none;">
+            <div id="board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="text-with-background" id="status"></div>
+            <div id="scoreboard">
+                <table>
+                    <tr>
+                        <th>Player</th>
+                        <th>Score</th>
+                    </tr>
+                    <tr>
+                        <td id="player1Name">Player 1 (O)</td>
+                        <td id="player1Score">0</td>
+                    </tr>
+                    <tr>
+                        <td id="player2Name">Player 2 (X)</td>
+                        <td id="player2Score">0</td>
+                    </tr>
+                    <tr>
+                        <td>Total Games</td>
+                        <td id="totalGames">0</td>
+                    </tr>
+                </table>
+            </div>
+            <button id="restartBtn">Restart Game</button>
+            <button id="homeBtn">Home</button>
+        </div>
+    </div>
+
+    <script src="scriptfriends.js"></script>
+</body>
+</html>

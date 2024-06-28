@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b6ecf3;
+}
+
+.container {
+    background-image: url('friends.jpg'); /* Add your image path here */
+    background-size: cover; /* Ensure the background image covers the whole container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    box-shadow: 0 0 10px rgba(210, 18, 18, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    /* color: #ffffff; */
+
+}
+.text-with-background {
+    display: inline-block; /* Ensure the background fits the text */
+    background-color: rgba(0, 0, 0, 0.7); /* Black background with 50% opacity */
+    color: white; /* Text color */
+    padding: 5px 10px; /* Padding around the text */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+h1 {
+    text-align: center;
+    color: #d4da26;
+}
+h3 {
+    text-align: center;
+    color: #26da44;
+}
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.cell {
+    border: 2px solid #0e0808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #ddd;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#scoreboard {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#scoreboard table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#scoreboard th, #scoreboard td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+#scoreboard th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#scoreboard td {
+    background-color: #f2f2f2;
+}
+
+#startBtn, #restartBtn, #homeBtn {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startBtn:hover, #restartBtn:hover, #homeBtn:hover {
+    background-color: #45a049;
+}
+
+.player-inputs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.player-inputs label {
+    margin-right: 10px;
+}
+
+.player-inputs input {
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
