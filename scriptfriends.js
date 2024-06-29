@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
         cells.forEach(cell => cell.innerHTML = '');
     };
     const handleHomeRedirect = () => {
-        window.location.href = 'home.html'; // Change this to your home page URL
+        window.location.href = 'index.html'; 
     };
 
     startBtn.addEventListener('click', () => {
